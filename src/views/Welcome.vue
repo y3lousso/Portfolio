@@ -16,7 +16,7 @@
             </q-avatar>
             <div class="text-h2">Yannick LOUSSOUARN</div>
             <div class="text-h3">Software Engineer</div>
-            <router-link tag="q-btn" class="bg-blue text-h6" to="/portfolio"
+            <router-link tag="q-btn" class="bg-blue text-h6" to="/timeline"
             >Access to portfolio
             </router-link>
           </q-card-section>
