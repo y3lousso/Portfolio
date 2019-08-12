@@ -5,8 +5,8 @@ import Welcome from './views/Welcome.vue';
 
 import CoreLayout from './layouts/CoreLayout.vue';
 
+import Timeline from './views/Timeline.vue';
 import Portfolio from './views/Portfolio.vue';
-import Projects from './views/Projects.vue';
 import Skills from './views/Skills.vue';
 import Contact from './views/Contact.vue';
 
@@ -26,14 +26,14 @@ export default new Router({
       component: CoreLayout,
       children: [
         {
+          path: '/timeline',
+          name: 'timeline',
+          component: Timeline,
+        },
+        {
           path: '/portfolio',
           name: 'portfolio',
           component: Portfolio,
-        },
-        {
-          path: '/projects',
-          name: 'projects',
-          component: Projects,
         },
         {
           path: '/skills',
