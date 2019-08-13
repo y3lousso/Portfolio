@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center ">Portfolio</h3>
+    <h3 class="text-center ">{{ $t("portfolio") }}</h3>
     <div class="q-pa-md">
       <div class="q-gutter-md row items-start">
         <q-list class="rounded-borders" style="width: 100%;">
@@ -18,7 +18,7 @@
         </q-list>
       </div>
     </div>
-    <q-dialog id="project_dialog" v-if="project_id != -1" v-model="carousel">
+    <q-dialog id="project_dialog" v-if="projectId != -1" v-model="carousel">
       <q-carousel
       id="project_carousel"
       swipeable
@@ -27,9 +27,9 @@
       arrows
       infinite
       >
-        <q-carousel-slide v-for="item of getContentByProject(project_id)" :key="item.id" :name="item.id" >
-          <q-img contain id="project_carousel_img" v-if="item.type=='image'" :ratio="1" :src="require('../assets/projects/' + projects[project_id].folderPath + item.path)"></q-img>
-          <q-video contain id="project_carousel_vid" v-if="item.type=='video'" :src="require('../assets/projects/' + projects[project_id].folderPath + item.path)"></q-video>
+        <q-carousel-slide v-for="item of getContentByProject(projectId)" :key="item.id" :name="item.id" >
+          <q-img contain id="project_carousel_img" v-if="item.type=='image'" :ratio="1" :src="require('../assets/projects/' + projects[projectId].folderPath + item.path)"></q-img>
+          <q-video contain id="project_carousel_vid" v-if="item.type=='video'" :src="require('../assets/projects/' + projects[projectId].folderPath + item.path)"></q-video>
         </q-carousel-slide>
       </q-carousel>
     </q-dialog>
@@ -61,35 +61,9 @@
 </style>
 
 <script>
-import {
-  QImg,
-  QList,
-  QItem,
-  QItemSection,
-  QDialog,
-  ClosePopup,
-  QCarousel,
-  QCarouselControl,
-  QCarouselSlide,
-  QVideo,
-} from 'quasar';
 
 export default {
   name: 'ProjectsPage',
-  components: {
-    QImg,
-    QList,
-    QItem,
-    QItemSection,
-    QDialog,
-    QCarousel,
-    QCarouselControl,
-    QCarouselSlide,
-    QVideo,
-  },
-  directives: {
-    ClosePopup,
-  },
   data() {
     return {
       carousel: false,
@@ -97,7 +71,7 @@ export default {
       sliders: false,
       slide: 0,
 
-      project_id: -1,
+      projectId: -1,
       projects: [
         {
           id: 0,
@@ -553,18 +527,18 @@ export default {
               type: 'image',
             },
           ],
-        }
+        },
       ],
     };
   },
   methods: {
-    displayProject(project_id) {
+    displayProject(projectId) {
       this.carousel = true;
-      this.project_id = project_id;
+      this.projectId = projectId;
       this.slide = 0;
     },
-    getContentByProject(project_id) {
-      var items = this.projects.find(p => p.id === project_id).content;
+    getContentByProject(projectId) {
+      const items = this.projects.find(p => p.id === projectId).content;
       return items;
     },
   },

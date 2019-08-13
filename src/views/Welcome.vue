@@ -15,9 +15,9 @@
               <q-img :src="require('../assets/profilePic.jpg')"/>
             </q-avatar>
             <div class="text-h2">Yannick LOUSSOUARN</div>
-            <div class="text-h3">Software Engineer</div>
+            <div class="text-h3">{{ $t("software_engineer") }}</div>
             <router-link tag="q-btn" class="bg-blue text-h6" to="/timeline"
-            >Access to portfolio
+            >{{ $t("access") }}
             </router-link>
           </q-card-section>
       </q-card>
@@ -25,23 +25,11 @@
     </q-page-container>
   </q-layout>
 </template>
-<script>
 
-import {
-  QImg,
-  QCard,
-  QCardSection,
-  QAvatar,
-} from 'quasar';
+<script>
 
 export default {
   name: 'WelcomePage',
-  components: {
-    QImg,
-    QCard,
-    QCardSection,
-    QAvatar,
-  },
 };
 
 </script>

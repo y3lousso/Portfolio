@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center">Skills</h3>
+    <h3 class="text-center">{{ $t("skills") }}</h3>
     <q-card>
       <q-tabs
         v-model="tab"
@@ -92,39 +92,9 @@
 </style>
 
 <script>
-import {
-  QList,
-  QItem,
-  QItemSection,
-  QLinearProgress,
-  QTabPanel,
-  QTabPanels,
-  QTabs,
-  QTab,
-  QRouteTab,
-  QCard,
-  QCardSection,
-  QCardActions,
-
-} from 'quasar';
 
 export default {
   name: 'SkillsPage',
-  components: {
-    QList,
-    QItem,
-    QItemSection,
-    QLinearProgress,
-    QTabPanel,
-    QTabPanels,
-    QTabs,
-    QTab,
-    QRouteTab,
-    QCard,
-    QCardSection,
-    QCardActions,
-  },
-
   data() {
     return {
       tab: 'overview',

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center">Contact</h3>
+    <h3 class="text-center">{{ $t("contact") }}</h3>
       <q-scroll-area style="height: 200px; max-width: 300px;">
         <div v-for="n in 100" :key="n" class="q-py-xs">
           Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -12,17 +12,13 @@
 </template>
 
 <style>
+
 </style>
 
 <script>
-import {
-  QScrollArea,
-} from 'quasar';
 
 export default {
   name: 'ContactPage',
-  components: {
-    QScrollArea,
-  },
 };
+
 </script>
