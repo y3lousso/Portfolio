@@ -22,19 +22,6 @@
           </div>
         </q-tab-panel>
 
-        <!--
-        <q-tab-panel name="web">
-          <div class="text-h6">Web</div>
-          <div>CodeStyle : ESlint</div>
-          <div>...</div>
-        </q-tab-panel>
-
-        <q-tab-panel name="desktop">
-          <div class="text-h6">Desktop</div>
-          <div>GTK MM -> Qt -> WPF -> UWP (XAML) -> Electron</div>
-          <div>...</div>
-        </q-tab-panel> -->
-
       </q-tab-panels>
     </q-card>
   </div>
@@ -65,39 +52,92 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: '3D / VR / Video games',
-                  value: 0.8,
+                  name: '3D / XR / Video games',
+                  value: 0.9,
                 },
                 {
                   id: 1,
                   name: 'Web Application',
-                  value: 0.2,
+                  value: 0.8,
                 },
                 {
-                  id: 1,
+                  id: 2,
                   name: 'Desktop Application',
-                  value: 0.2,
+                  value: 0.7,
                 },
               ],
             },
             {
-              id: 0,
+              id: 1,
+              name: 'Project Management',
+              skills: [
+                {
+                  id: 0,
+                  name: 'Trello',
+                  value: 1,
+                },
+                {
+                  id: 1,
+                  name: 'Office 365',
+                  value: 0.9,
+                },
+                {
+                  id: 2,
+                  name: 'MS Project',
+                  value: 0.3,
+                },
+              ],
+            },
+            {
+              id: 1,
+              name: 'IDE',
+              skills: [
+                {
+                  id: 0,
+                  name: 'Visual Studio Code',
+                  value: 1,
+                },
+                {
+                  id: 1,
+                  name: 'Visual Studio 2015/2017',
+                  value: 1,
+                },
+                {
+                  id: 2,
+                  name: 'Eclipse',
+                  value: 0.4,
+                },
+              ],
+            },
+            {
+              id: 1,
               name: 'Git',
               skills: [
                 {
                   id: 0,
-                  name: 'Git',
-                  value: 0.8,
+                  name: 'GitHub/GitLab',
+                  value: 0.9,
                 },
                 {
                   id: 1,
-                  name: 'Unreal Engine',
-                  value: 0.2,
+                  name: 'Bash/SourceTree/GitKraken',
+                  value: 0.9,
                 },
               ],
             },
             {
-              id: 0,
+              id: 2,
+              name: 'DevOps',
+              skills: [
+                {
+                  id: 0,
+                  name: 'GitLab CI',
+                  value: 0.7,
+                },
+              ],
+            },
+            {
+              id: 3,
               name: 'Languages',
               skills: [
                 {
@@ -108,7 +148,7 @@ export default {
                 {
                   id: 1,
                   name: 'English',
-                  value: 0.8,
+                  value: 0.9,
                 },
                 {
                   id: 2,
@@ -120,7 +160,7 @@ export default {
                   name: 'Spanish',
                   value: 0.2,
                 },
-                
+
               ],
             },
           ],
@@ -140,12 +180,12 @@ export default {
                 {
                   id: 0,
                   name: 'Unity',
-                  value: 0.8,
+                  value: 0.9,
                 },
                 {
                   id: 1,
                   name: 'Unreal Engine',
-                  value: 0.2,
+                  value: 0.4,
                 },
               ],
             },
@@ -155,13 +195,13 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: 'Blender',
-                  value: 0.2,
+                  name: 'GIMP',
+                  value: 0.7,
                 },
                 {
                   id: 1,
-                  name: 'GIMP',
-                  value: 0.6,
+                  name: 'Blender',
+                  value: 0.5,
                 },
               ],
             },
@@ -182,11 +222,11 @@ export default {
                 {
                   id: 0,
                   name: 'Vuejs (with Vuex & Axios)',
-                  value: 0.8,
+                  value: 0.9,
                 },
                 {
                   id: 1,
-                  name: 'CSS -> Bootstrap -> Quasar',
+                  name: 'CSS / Bootstrap / Quasar',
                   value: 0.8,
                 },
               ],
@@ -197,13 +237,13 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: 'ASP.NET Core MVC 2',
-                  value: 0.2,
+                  name: 'Laravel',
+                  value: 0.9,
                 },
                 {
                   id: 1,
-                  name: 'Laravel',
-                  value: 0.6,
+                  name: 'ASP.NET Core MVC 2',
+                  value: 0.7,
                 },
               ],
             },
@@ -219,7 +259,7 @@ export default {
                 {
                   id: 0,
                   name: 'Docker',
-                  value: 0.8,
+                  value: 0.9,
                 },
                 {
                   id: 0,
@@ -246,7 +286,7 @@ export default {
                 {
                   id: 0,
                   name: 'Apache -> Nginx',
-                  value: .7,
+                  value: 0.7,
                 },
               ],
             },
@@ -267,7 +307,7 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: "Jest/ PhpUnit",
+                  name: 'Jest/ PhpUnit',
                   value: 0.4,
                 },
               ],
@@ -278,8 +318,8 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: "ESlint / PHP CBF",
-                  value: 0.4,
+                  name: 'ESlint / PHP CBF',
+                  value: 0.8,
                 },
               ],
             },
@@ -296,33 +336,43 @@ export default {
           skillGroups: [
             {
               id: 0,
-              name: 'Game Engine',
+              name: 'UI Technologies',
               skills: [
                 {
                   id: 0,
-                  name: 'Unity',
-                  value: 0.8,
+                  name: 'UWP XAML',
+                  value: 0.9,
+                },
+                {
+                  id: 0,
+                  name: 'Electron',
+                  value: 0.6,
                 },
                 {
                   id: 1,
-                  name: 'Unreal Engine',
-                  value: 0.2,
+                  name: 'WPF XAML',
+                  value: 0.6,
+                },
+                {
+                  id: 1,
+                  name: 'Qt',
+                  value: 0.5,
+                },
+                {
+                  id: 1,
+                  name: 'GTKMM',
+                  value: 0.3,
                 },
               ],
             },
             {
               id: 1,
-              name: 'Design',
+              name: 'Framework',
               skills: [
                 {
                   id: 0,
-                  name: 'Blender',
-                  value: 0.2,
-                },
-                {
-                  id: 1,
-                  name: 'GIMP',
-                  value: 0.6,
+                  name: 'Prism Library',
+                  value: 0.3,
                 },
               ],
             },
