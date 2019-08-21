@@ -41,6 +41,8 @@ import {
   QCardActions,
   QTimeline,
   QTimelineEntry,
+  QForm,
+  QInput,
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -80,6 +82,8 @@ Vue.use(Quasar, {
     QCardActions,
     QTimeline,
     QTimelineEntry,
+    QForm,
+    QInput,
   },
   directives: {
     ClosePopup,
