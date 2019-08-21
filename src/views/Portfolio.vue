@@ -327,6 +327,11 @@ export default {
               path: '00.jpg',
               type: 'image',
             },
+            {
+              id: 1,
+              path: '01.jpg',
+              type: 'image',
+            },
           ],
         },
         {
