@@ -89,7 +89,7 @@ export default {
               ],
             },
             {
-              id: 1,
+              id: 2,
               name: 'IDE',
               skills: [
                 {
@@ -110,7 +110,7 @@ export default {
               ],
             },
             {
-              id: 1,
+              id: 3,
               name: 'Git',
               skills: [
                 {
@@ -126,7 +126,7 @@ export default {
               ],
             },
             {
-              id: 2,
+              id: 4,
               name: 'DevOps',
               skills: [
                 {
@@ -137,12 +137,12 @@ export default {
               ],
             },
             {
-              id: 3,
+              id: 5,
               name: 'Languages',
               skills: [
                 {
                   id: 0,
-                  name: 'French',
+                  name: 'French (Native)',
                   value: 1,
                 },
                 {
@@ -191,6 +191,58 @@ export default {
             },
             {
               id: 1,
+              name: 'Unity : Platform / Device',
+              skills: [
+                {
+                  id: 0,
+                  name: 'Desktop (Standalone)',
+                  value: 1,
+                },
+                {
+                  id: 1,
+                  name: 'HTC Vive / WMR Headsets',
+                  value: 1,
+                },
+                {
+                  id: 2,
+                  name: 'HoloLens',
+                  value: 0.8,
+                },
+                {
+                  id: 3,
+                  name: 'Android (tablet & smartphone)',
+                  value: 0.8,
+                },
+                {
+                  id: 4,
+                  name: 'Android (Oculus Go & Quest)',
+                  value: 0.7,
+                },
+              ],
+            },
+            {
+              id: 2,
+              name: 'XR Framework',
+              skills: [
+                {
+                  id: 0,
+                  name: 'VRTK ',
+                  value: 0.9,
+                },
+                {
+                  id: 1,
+                  name: 'MRTK (HoloLens)',
+                  value: 0.7,
+                },
+                {
+                  id: 2,
+                  name: 'Vuforia',
+                  value: 0.5,
+                },
+              ],
+            },
+            {
+              id: 3,
               name: 'Design',
               skills: [
                 {
@@ -245,6 +297,11 @@ export default {
                   name: 'ASP.NET Core MVC 2',
                   value: 0.7,
                 },
+                {
+                  id: 2,
+                  name: 'Postman / Insomnia',
+                  value: 0.7,
+                },
               ],
             },
             {
@@ -257,12 +314,12 @@ export default {
                   value: 1,
                 },
                 {
-                  id: 0,
+                  id: 1,
                   name: 'Docker',
                   value: 0.9,
                 },
                 {
-                  id: 0,
+                  id: 2,
                   name: 'Automated VM',
                   value: 0.5,
                 },
@@ -307,7 +364,7 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: 'Jest/ PhpUnit',
+                  name: 'Jest / PhpUnit',
                   value: 0.4,
                 },
               ],
@@ -344,22 +401,22 @@ export default {
                   value: 0.9,
                 },
                 {
-                  id: 0,
+                  id: 1,
                   name: 'Electron',
                   value: 0.6,
                 },
                 {
-                  id: 1,
+                  id: 2,
                   name: 'WPF XAML',
                   value: 0.6,
                 },
                 {
-                  id: 1,
+                  id: 3,
                   name: 'Qt',
                   value: 0.5,
                 },
                 {
-                  id: 1,
+                  id: 4,
                   name: 'GTKMM',
                   value: 0.3,
                 },
