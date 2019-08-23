@@ -7,7 +7,7 @@
           Centre Aquitain des Technologies de l'Informatique et de l'Electronique (CATIE)
         </template>
         <template v-slot:subtitle>
-          July 2018 => Until January 2020
+          Feb 2019 => Until January 2020
           <br/>
           <a href="https://www.catie.fr/" target="_blank">https://www.catie.fr/</a>
         </template>
@@ -22,12 +22,12 @@
           Centre Aquitain des Technologies de l'Informatique et de l'Electronique (CATIE)
         </template>
         <template v-slot:subtitle>
-          July 2018 => Until January 2020
+          Jul 2018 => Dec 2018
           <br/>
           <a href="https://www.catie.fr/" target="_blank">https://www.catie.fr/</a>
         </template>
         <div>
-          In charge of the design and development of a human monitoring application, my job is to create a software allowing the recovery of physiological data from a multiplatform application (Unity or other).
+          In charge of the design and development of a human monitoring application, my job during this 6 months internship was to create a software allowing the recovery of physiological data from a multiplatform application (Unity or other).
         </div>
         <br/>
       </q-timeline-entry>
@@ -57,7 +57,7 @@
           <a href="https://www.thalesgroup.com/en" target="_blank">https://www.thalesgroup.com/en</a>
         </template>
         <div>
-          In charge of the design and developement of two training courses in virtual reality. It was the perfect experience to discover multiple facets of the job of a software engineer.
+          In charge of the design and developement of two training courses in virtual reality. This 5 months internship was the perfect experience to discover multiple facets of the job of a software engineer.
         </div>
         <br/>
       </q-timeline-entry>
