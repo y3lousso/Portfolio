@@ -1,9 +1,9 @@
 <template>
   <div>
     <h3 class="text-center">{{ $t("contact") }}</h3>
-    <div class="q-pa-md" style="max-width: 400px">
+    <div class="q-pa-md">
     <q-form
-      @submit="onSubmit"
+      @submit="sendMail"
       @reset="onReset"
       class="q-gutter-md"
     >
@@ -12,34 +12,41 @@
         v-model="name"
         label="Your name *"
         hint="Name"
+        style="width: 40%"
+
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
+        :rules="[ val => val && val.length > 0 || 'Please type your name']"
       />
 
       <q-input
         filled
-        v-model="name"
+        type="mail"
+        v-model="mail"
         label="Your mail *"
         hint="Mail"
+        style="width: 40%"
+
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
+        :rules="[
+          val => val !== null && val !== '' || 'Please type your mail',
+        ]"
       />
 
       <q-input
         filled
-        type="number"
-        v-model="age"
-        label="Your age *"
+        type="textarea"
+        v-model="message"
+        label="Your message *"
+        hint="Message"
         lazy-rules
         :rules="[
-          val => val !== null && val !== '' || 'Please type your age',
-          val => val > 0 && val < 100 || 'Please type a real age'
+          val => val !== null && val !== '' || 'Please type your message',
         ]"
       />
 
       <div>
-        <q-btn label="Submit" type="submit" color="primary"/>
-        <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+        <q-btn label="Submit" type="submit" color="red"/>
+        <q-btn label="Reset" type="reset" color="red" flat class="q-ml-sm" />
       </div>
     </q-form>
    </div>
@@ -56,7 +63,8 @@ export default {
   data() {
     return {
       name: null,
-      age: null,
+      mail: null,
+      message: null,
 
       accept: true,
     };
@@ -81,10 +89,18 @@ export default {
       }
     },
 
+    sendMail() {
+      this.$store.dispatch('sendMail', {
+        name: this.name,
+        mail: this.mail,
+        message: this.message,
+      });
+    },
+
     onReset() {
       this.name = null;
-      this.age = null;
-      this.accept = false;
+      this.mail = null;
+      this.message = null;
     },
   },
 };
