@@ -302,6 +302,11 @@ export default {
                   name: 'Postman / Insomnia',
                   value: 0.7,
                 },
+                {
+                  id: 3,
+                  name: 'Express',
+                  value: 0.4,
+                },
               ],
             },
             {
@@ -342,8 +347,18 @@ export default {
               skills: [
                 {
                   id: 0,
-                  name: 'Apache -> Nginx',
-                  value: 0.7,
+                  name: 'Nginx',
+                  value: 0.8,
+                },
+                {
+                  id: 0,
+                  name: 'Caddy',
+                  value: 0.6,
+                },
+                {
+                  id: 0,
+                  name: 'Apache',
+                  value: 0.6,
                 },
               ],
             },

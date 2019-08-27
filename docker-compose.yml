@@ -1,0 +1,20 @@
+# docker build -t "portfolio_frontend" .
+# docker-compose up --
+
+version: '3'
+
+services:
+  portfolio_frontend:
+    image: portfolio_frontend
+    container_name: portfolio_frontend
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    networks:
+      - virtual-network
+
+networks:
+  virtual-network:
+    external:
+      name: virtual-network
