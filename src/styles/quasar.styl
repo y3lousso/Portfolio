@@ -1,3 +1,25 @@
 @import './quasar.variables'
 @import '~quasar-styl'
-// @import '~quasar-addon-styl'
+@import '~quasar-addon-styl'
+
+fluid-font-size($minimumSize = 12, $maximumSize = 36, $minimumViewportWidth = 300, $maximumViewportWidth = 1600)
+  font-size: 'calc(%spx + (%s - %s) * ((100vw - %spx) / (%s - %s))) !important' % ($minimumSize $maximumSize $minimumSize $minimumViewportWidth $maximumViewportWidth $minimumViewportWidth)
+
+for num in (8..28)
+  .fontsize-{num}
+    fluid-font-size num (num*2+2) 300 1800
+
+fluid-image-size($minimumSize = 12, $maximumSize = 36, $minimumViewportWidth = 300, $maximumViewportWidth = 1600)
+  height: 'calc(%spx + (%s - %s) * ((100vw - %spx) / (%s - %s))) !important' % ($minimumSize $maximumSize $minimumSize $minimumViewportWidth $maximumViewportWidth $minimumViewportWidth)
+  max-width:'calc(%spx + (%s - %s) * ((100vw - %spx) / (%s - %s))) !important' % ($minimumSize $maximumSize $minimumSize $minimumViewportWidth $maximumViewportWidth $minimumViewportWidth)
+
+for num in (1..200)
+  .imagesize-{num}
+    fluid-image-size num (num*2+2) 300 1800
+
+fluid-margin-size($minimumSize = 12, $maximumSize = 36, $minimumViewportWidth = 300, $maximumViewportWidth = 1600)
+  margin: 'calc(%spx + (%s - %s) * ((100vw - %spx) / (%s - %s))) !important' % ($minimumSize $maximumSize $minimumSize $minimumViewportWidth $maximumViewportWidth $minimumViewportWidth)
+
+for num in (1..200)
+  .marginsize-{num}
+    fluid-margin-size num (num*2+2) 300 1800

@@ -5,5 +5,6 @@ module.exports = {
   ],
   framework: {
     iconSet: 'fontawesome',
+    cssAddon: true,
   },
 };

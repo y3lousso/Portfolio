@@ -351,12 +351,12 @@ export default {
                   value: 0.8,
                 },
                 {
-                  id: 0,
+                  id: 1,
                   name: 'Caddy',
                   value: 0.6,
                 },
                 {
-                  id: 0,
+                  id: 2,
                   name: 'Apache',
                   value: 0.6,
                 },

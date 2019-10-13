@@ -167,7 +167,7 @@ export default {
           id: 2,
           name: 'Civil Disorder',
           date: 'Mar 2018',
-          description: "A 3D game made on Unity for the WonderJam2018. We were 6 people and we had to create a game within 48 hours.We were given 3 topics : Arcade, Multi, Survival. We decided to create a car game in split screen. You can play 1v1, 2v2 or solo. As you can guess, the aim is to destroy everything. By the way, the main topic of the game jam was 'Order and Disorder'. More you destroy, more you get points. You can also destroy the enemy cars",
+          description: "A 3D game made on Unity for the WonderJam2018. We were 6 people and we had to create a game within 48 hours.We were given 3 topics : Arcade, Multi, Survival. We decided to create a car game in split screen. You can play 1v1, 2v2 or solo. As you can guess, the aim is to destroy everything. By the way, the main topic of the game jam was 'Order and Disorder'. More you destroy, more you get points. You can also destroy your opponents' cars.",
           folderPath: 'CivilDisorder/',
           thumbnail: 'CivilDisorder/small.jpg',
           github: 'https://github.com/Saarg/WonderJam',

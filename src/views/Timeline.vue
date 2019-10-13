@@ -12,7 +12,7 @@
           <a href="https://www.catie.fr/" target="_blank">https://www.catie.fr/</a>
         </template>
         <div>
-          In charge of the design and development of a human monitoring application, my job is to create a software allowing the recovery of physiological data from a multiplatform application (Unity or other).
+          In charge of the design and development of our brand-new platform Peac²h (Platforme d’Evaluation et d’Analyse Comportementale et Cognitive de l’Humain). My job was to retrieve the needs with my collaborators, to design/implement the solution in an iterative process.
         </div>
           <br/>
       </q-timeline-entry>
